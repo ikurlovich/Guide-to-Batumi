@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5924DA0729A7D13E00748807 /* MapGardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA0629A7D13E00748807 /* MapGardenView.swift */; };
+		5924DA0929A80A0B00748807 /* MapGonioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA0829A80A0B00748807 /* MapGonioView.swift */; };
+		5924DA0B29A94BE000748807 /* MapMuseumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA0A29A94BE000748807 /* MapMuseumView.swift */; };
+		5924DA0D29A94FD300748807 /* MapBeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA0C29A94FD300748807 /* MapBeachView.swift */; };
+		5924DA0F29AA631A00748807 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5924DA0E29AA631A00748807 /* Launch Screen.storyboard */; };
+		5924DA1629AA762100748807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5924DA1529AA762100748807 /* Assets.xcassets */; };
+		5924DA1829AA79C800748807 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA1729AA79C800748807 /* StartView.swift */; };
+		5924DA1C29AC060400748807 /* FoodOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA1B29AC060400748807 /* FoodOneView.swift */; };
+		5924DA1F29AC075C00748807 /* FoodTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA1E29AC075C00748807 /* FoodTwoView.swift */; };
+		5924DA3729AE880600748807 /* HomeOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA3629AE880600748807 /* HomeOneView.swift */; };
+		5924DA3929AE890B00748807 /* HomeTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA3829AE890B00748807 /* HomeTwoView.swift */; };
+		5924DA3B29AE996700748807 /* DesertSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA3A29AE996700748807 /* DesertSubView.swift */; };
+		5924DA4729AEA51300748807 /* PirosmaniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA4629AEA51300748807 /* PirosmaniView.swift */; };
+		5924DA4929AEAB5800748807 /* KarabakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA4829AEAB5800748807 /* KarabakView.swift */; };
+		5924DA4B29AEB1D200748807 /* DonaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA4A29AEB1D200748807 /* DonaView.swift */; };
+		5924DA4D29AEB20800748807 /* FoodThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA4C29AEB20800748807 /* FoodThreeView.swift */; };
+		5924DA4F29AEBE0600748807 /* WokView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA4E29AEBE0600748807 /* WokView.swift */; };
+		5924DA5129AEC7E800748807 /* FoodFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924DA5029AEC7E800748807 /* FoodFourView.swift */; };
+		597F4741299300DC00B0FAD4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F4740299300DC00B0FAD4 /* HomeView.swift */; };
+		597F4744299302EF00B0FAD4 /* СultureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F4743299302EF00B0FAD4 /* СultureView.swift */; };
+		597F474629930F0B00B0FAD4 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F474529930F0B00B0FAD4 /* FoodView.swift */; };
+		597F47482993109E00B0FAD4 /* DesertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F47472993109E00B0FAD4 /* DesertView.swift */; };
+		5982FC522992FA4000D9A376 /* Guide_to_BatumiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC512992FA4000D9A376 /* Guide_to_BatumiApp.swift */; };
+		5982FC542992FA4000D9A376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC532992FA4000D9A376 /* ContentView.swift */; };
+		5982FC592992FA4100D9A376 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5982FC582992FA4100D9A376 /* Preview Assets.xcassets */; };
+		5982FC632992FA4200D9A376 /* Guide_to_BatumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC622992FA4200D9A376 /* Guide_to_BatumiTests.swift */; };
+		5982FC6D2992FA4200D9A376 /* Guide_to_BatumiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */; };
+		5982FC6F2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5982FC5F2992FA4200D9A376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5982FC462992FA4000D9A376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5982FC4D2992FA4000D9A376;
+			remoteInfo = "Guide to Batumi";
+		};
+		5982FC692992FA4200D9A376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5982FC462992FA4000D9A376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5982FC4D2992FA4000D9A376;
+			remoteInfo = "Guide to Batumi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5924DA0629A7D13E00748807 /* MapGardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGardenView.swift; sourceTree = "<group>"; };
+		5924DA0829A80A0B00748807 /* MapGonioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGonioView.swift; sourceTree = "<group>"; };
+		5924DA0A29A94BE000748807 /* MapMuseumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMuseumView.swift; sourceTree = "<group>"; };
+		5924DA0C29A94FD300748807 /* MapBeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBeachView.swift; sourceTree = "<group>"; };
+		5924DA0E29AA631A00748807 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5924DA1529AA762100748807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5924DA1729AA79C800748807 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		5924DA1B29AC060400748807 /* FoodOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOneView.swift; sourceTree = "<group>"; };
+		5924DA1E29AC075C00748807 /* FoodTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTwoView.swift; sourceTree = "<group>"; };
+		5924DA3629AE880600748807 /* HomeOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOneView.swift; sourceTree = "<group>"; };
+		5924DA3829AE890B00748807 /* HomeTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTwoView.swift; sourceTree = "<group>"; };
+		5924DA3A29AE996700748807 /* DesertSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertSubView.swift; sourceTree = "<group>"; };
+		5924DA4629AEA51300748807 /* PirosmaniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirosmaniView.swift; sourceTree = "<group>"; };
+		5924DA4829AEAB5800748807 /* KarabakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarabakView.swift; sourceTree = "<group>"; };
+		5924DA4A29AEB1D200748807 /* DonaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonaView.swift; sourceTree = "<group>"; };
+		5924DA4C29AEB20800748807 /* FoodThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodThreeView.swift; sourceTree = "<group>"; };
+		5924DA4E29AEBE0600748807 /* WokView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WokView.swift; sourceTree = "<group>"; };
+		5924DA5029AEC7E800748807 /* FoodFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFourView.swift; sourceTree = "<group>"; };
+		597F4740299300DC00B0FAD4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		597F4743299302EF00B0FAD4 /* СultureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СultureView.swift"; sourceTree = "<group>"; };
+		597F474529930F0B00B0FAD4 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		597F47472993109E00B0FAD4 /* DesertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertView.swift; sourceTree = "<group>"; };
+		5982FC4E2992FA4000D9A376 /* Guide to Batumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guide to Batumi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5982FC512992FA4000D9A376 /* Guide_to_BatumiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiApp.swift; sourceTree = "<group>"; };
+		5982FC532992FA4000D9A376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5982FC582992FA4100D9A376 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5982FC5E2992FA4200D9A376 /* Guide to BatumiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guide to BatumiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5982FC622992FA4200D9A376 /* Guide_to_BatumiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiTests.swift; sourceTree = "<group>"; };
+		5982FC682992FA4200D9A376 /* Guide to BatumiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guide to BatumiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiUITests.swift; sourceTree = "<group>"; };
+		5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5982FC4B2992FA4000D9A376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5982FC5B2992FA4200D9A376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5982FC652992FA4200D9A376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5924DA0529A7D0FA00748807 /* MapCulture */ = {
+			isa = PBXGroup;
+			children = (
+				5924DA0629A7D13E00748807 /* MapGardenView.swift */,
+				5924DA0829A80A0B00748807 /* MapGonioView.swift */,
+				5924DA0A29A94BE000748807 /* MapMuseumView.swift */,
+				5924DA0C29A94FD300748807 /* MapBeachView.swift */,
+			);
+			path = MapCulture;
+			sourceTree = "<group>";
+		};
+		5924DA1229AA6BBB00748807 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				5982FC512992FA4000D9A376 /* Guide_to_BatumiApp.swift */,
+				5924DA0E29AA631A00748807 /* Launch Screen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		5924DA1D29AC060A00748807 /* FoodImageAuto */ = {
+			isa = PBXGroup;
+			children = (
+				5924DA1B29AC060400748807 /* FoodOneView.swift */,
+				5924DA1E29AC075C00748807 /* FoodTwoView.swift */,
+				5924DA4C29AEB20800748807 /* FoodThreeView.swift */,
+				5924DA5029AEC7E800748807 /* FoodFourView.swift */,
+			);
+			path = FoodImageAuto;
+			sourceTree = "<group>";
+		};
+		5924DA3529AE87CC00748807 /* HomeImageAuto */ = {
+			isa = PBXGroup;
+			children = (
+				5924DA3629AE880600748807 /* HomeOneView.swift */,
+				5924DA3829AE890B00748807 /* HomeTwoView.swift */,
+			);
+			path = HomeImageAuto;
+			sourceTree = "<group>";
+		};
+		5924DA4029AEA0C300748807 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				597F4740299300DC00B0FAD4 /* HomeView.swift */,
+				5924DA3529AE87CC00748807 /* HomeImageAuto */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5924DA4129AEA0DC00748807 /* Culture */ = {
+			isa = PBXGroup;
+			children = (
+				597F4743299302EF00B0FAD4 /* СultureView.swift */,
+				5924DA0529A7D0FA00748807 /* MapCulture */,
+			);
+			path = Culture;
+			sourceTree = "<group>";
+		};
+		5924DA4229AEA0F200748807 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				597F474529930F0B00B0FAD4 /* FoodView.swift */,
+				5924DA4529AEA4DC00748807 /* FoodPlace */,
+				5924DA1D29AC060A00748807 /* FoodImageAuto */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		5924DA4329AEA12000748807 /* Desert */ = {
+			isa = PBXGroup;
+			children = (
+				597F47472993109E00B0FAD4 /* DesertView.swift */,
+				5924DA3A29AE996700748807 /* DesertSubView.swift */,
+			);
+			path = Desert;
+			sourceTree = "<group>";
+		};
+		5924DA4529AEA4DC00748807 /* FoodPlace */ = {
+			isa = PBXGroup;
+			children = (
+				5924DA4629AEA51300748807 /* PirosmaniView.swift */,
+				5924DA4829AEAB5800748807 /* KarabakView.swift */,
+				5924DA4A29AEB1D200748807 /* DonaView.swift */,
+				5924DA4E29AEBE0600748807 /* WokView.swift */,
+			);
+			path = FoodPlace;
+			sourceTree = "<group>";
+		};
+		597F4742299301EF00B0FAD4 /* Application Structure */ = {
+			isa = PBXGroup;
+			children = (
+				5924DA4029AEA0C300748807 /* Home */,
+				5924DA4129AEA0DC00748807 /* Culture */,
+				5924DA4229AEA0F200748807 /* Food */,
+				5924DA4329AEA12000748807 /* Desert */,
+			);
+			path = "Application Structure";
+			sourceTree = "<group>";
+		};
+		5982FC452992FA4000D9A376 = {
+			isa = PBXGroup;
+			children = (
+				5982FC502992FA4000D9A376 /* Guide to Batumi */,
+				5982FC612992FA4200D9A376 /* Guide to BatumiTests */,
+				5982FC6B2992FA4200D9A376 /* Guide to BatumiUITests */,
+				5982FC4F2992FA4000D9A376 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5982FC4F2992FA4000D9A376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5982FC4E2992FA4000D9A376 /* Guide to Batumi.app */,
+				5982FC5E2992FA4200D9A376 /* Guide to BatumiTests.xctest */,
+				5982FC682992FA4200D9A376 /* Guide to BatumiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5982FC502992FA4000D9A376 /* Guide to Batumi */ = {
+			isa = PBXGroup;
+			children = (
+				5924DA1229AA6BBB00748807 /* Launch */,
+				5924DA1729AA79C800748807 /* StartView.swift */,
+				5982FC532992FA4000D9A376 /* ContentView.swift */,
+				597F4742299301EF00B0FAD4 /* Application Structure */,
+				5924DA1529AA762100748807 /* Assets.xcassets */,
+				5982FC572992FA4100D9A376 /* Preview Content */,
+			);
+			path = "Guide to Batumi";
+			sourceTree = "<group>";
+		};
+		5982FC572992FA4100D9A376 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5982FC582992FA4100D9A376 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5982FC612992FA4200D9A376 /* Guide to BatumiTests */ = {
+			isa = PBXGroup;
+			children = (
+				5982FC622992FA4200D9A376 /* Guide_to_BatumiTests.swift */,
+			);
+			path = "Guide to BatumiTests";
+			sourceTree = "<group>";
+		};
+		5982FC6B2992FA4200D9A376 /* Guide to BatumiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */,
+				5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */,
+			);
+			path = "Guide to BatumiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5982FC4D2992FA4000D9A376 /* Guide to Batumi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5982FC722992FA4200D9A376 /* Build configuration list for PBXNativeTarget "Guide to Batumi" */;
+			buildPhases = (
+				5982FC4A2992FA4000D9A376 /* Sources */,
+				5982FC4B2992FA4000D9A376 /* Frameworks */,
+				5982FC4C2992FA4000D9A376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guide to Batumi";
+			productName = "Guide to Batumi";
+			productReference = 5982FC4E2992FA4000D9A376 /* Guide to Batumi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5982FC5D2992FA4200D9A376 /* Guide to BatumiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5982FC752992FA4200D9A376 /* Build configuration list for PBXNativeTarget "Guide to BatumiTests" */;
+			buildPhases = (
+				5982FC5A2992FA4200D9A376 /* Sources */,
+				5982FC5B2992FA4200D9A376 /* Frameworks */,
+				5982FC5C2992FA4200D9A376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5982FC602992FA4200D9A376 /* PBXTargetDependency */,
+			);
+			name = "Guide to BatumiTests";
+			productName = "Guide to BatumiTests";
+			productReference = 5982FC5E2992FA4200D9A376 /* Guide to BatumiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5982FC672992FA4200D9A376 /* Guide to BatumiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5982FC782992FA4200D9A376 /* Build configuration list for PBXNativeTarget "Guide to BatumiUITests" */;
+			buildPhases = (
+				5982FC642992FA4200D9A376 /* Sources */,
+				5982FC652992FA4200D9A376 /* Frameworks */,
+				5982FC662992FA4200D9A376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5982FC6A2992FA4200D9A376 /* PBXTargetDependency */,
+			);
+			name = "Guide to BatumiUITests";
+			productName = "Guide to BatumiUITests";
+			productReference = 5982FC682992FA4200D9A376 /* Guide to BatumiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5982FC462992FA4000D9A376 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5982FC4D2992FA4000D9A376 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5982FC5D2992FA4200D9A376 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5982FC4D2992FA4000D9A376;
+					};
+					5982FC672992FA4200D9A376 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5982FC4D2992FA4000D9A376;
+					};
+				};
+			};
+			buildConfigurationList = 5982FC492992FA4000D9A376 /* Build configuration list for PBXProject "Guide to Batumi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 5982FC452992FA4000D9A376;
+			productRefGroup = 5982FC4F2992FA4000D9A376 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5982FC4D2992FA4000D9A376 /* Guide to Batumi */,
+				5982FC5D2992FA4200D9A376 /* Guide to BatumiTests */,
+				5982FC672992FA4200D9A376 /* Guide to BatumiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5982FC4C2992FA4000D9A376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5924DA0F29AA631A00748807 /* Launch Screen.storyboard in Resources */,
+				5924DA1629AA762100748807 /* Assets.xcassets in Resources */,
+				5982FC592992FA4100D9A376 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5982FC5C2992FA4200D9A376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5982FC662992FA4200D9A376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5982FC4A2992FA4000D9A376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5924DA0729A7D13E00748807 /* MapGardenView.swift in Sources */,
+				5924DA4D29AEB20800748807 /* FoodThreeView.swift in Sources */,
+				5924DA1829AA79C800748807 /* StartView.swift in Sources */,
+				5924DA4929AEAB5800748807 /* KarabakView.swift in Sources */,
+				597F4741299300DC00B0FAD4 /* HomeView.swift in Sources */,
+				5924DA4F29AEBE0600748807 /* WokView.swift in Sources */,
+				5924DA0929A80A0B00748807 /* MapGonioView.swift in Sources */,
+				597F474629930F0B00B0FAD4 /* FoodView.swift in Sources */,
+				5924DA1C29AC060400748807 /* FoodOneView.swift in Sources */,
+				5924DA4729AEA51300748807 /* PirosmaniView.swift in Sources */,
+				5924DA3729AE880600748807 /* HomeOneView.swift in Sources */,
+				5924DA3929AE890B00748807 /* HomeTwoView.swift in Sources */,
+				597F4744299302EF00B0FAD4 /* СultureView.swift in Sources */,
+				5924DA4B29AEB1D200748807 /* DonaView.swift in Sources */,
+				597F47482993109E00B0FAD4 /* DesertView.swift in Sources */,
+				5924DA3B29AE996700748807 /* DesertSubView.swift in Sources */,
+				5982FC542992FA4000D9A376 /* ContentView.swift in Sources */,
+				5924DA0B29A94BE000748807 /* MapMuseumView.swift in Sources */,
+				5924DA5129AEC7E800748807 /* FoodFourView.swift in Sources */,
+				5982FC522992FA4000D9A376 /* Guide_to_BatumiApp.swift in Sources */,
+				5924DA0D29A94FD300748807 /* MapBeachView.swift in Sources */,
+				5924DA1F29AC075C00748807 /* FoodTwoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5982FC5A2992FA4200D9A376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5982FC632992FA4200D9A376 /* Guide_to_BatumiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5982FC642992FA4200D9A376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5982FC6F2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift in Sources */,
+				5982FC6D2992FA4200D9A376 /* Guide_to_BatumiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5982FC602992FA4200D9A376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5982FC4D2992FA4000D9A376 /* Guide to Batumi */;
+			targetProxy = 5982FC5F2992FA4200D9A376 /* PBXContainerItemProxy */;
+		};
+		5982FC6A2992FA4200D9A376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5982FC4D2992FA4000D9A376 /* Guide to Batumi */;
+			targetProxy = 5982FC692992FA4200D9A376 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5982FC702992FA4200D9A376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5982FC712992FA4200D9A376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5982FC732992FA4200D9A376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Guide to Batumi/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Q8855SSVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Guide to Batumi";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-Batumi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5982FC742992FA4200D9A376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Guide to Batumi/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Q8855SSVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Guide to Batumi";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-Batumi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5982FC762992FA4200D9A376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q8855SSVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-BatumiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guide to Batumi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Guide to Batumi";
+			};
+			name = Debug;
+		};
+		5982FC772992FA4200D9A376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q8855SSVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-BatumiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guide to Batumi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Guide to Batumi";
+			};
+			name = Release;
+		};
+		5982FC792992FA4200D9A376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q8855SSVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-BatumiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guide to Batumi";
+			};
+			name = Debug;
+		};
+		5982FC7A2992FA4200D9A376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q8855SSVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-BatumiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guide to Batumi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5982FC492992FA4000D9A376 /* Build configuration list for PBXProject "Guide to Batumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5982FC702992FA4200D9A376 /* Debug */,
+				5982FC712992FA4200D9A376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5982FC722992FA4200D9A376 /* Build configuration list for PBXNativeTarget "Guide to Batumi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5982FC732992FA4200D9A376 /* Debug */,
+				5982FC742992FA4200D9A376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5982FC752992FA4200D9A376 /* Build configuration list for PBXNativeTarget "Guide to BatumiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5982FC762992FA4200D9A376 /* Debug */,
+				5982FC772992FA4200D9A376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5982FC782992FA4200D9A376 /* Build configuration list for PBXNativeTarget "Guide to BatumiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5982FC792992FA4200D9A376 /* Debug */,
+				5982FC7A2992FA4200D9A376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5982FC462992FA4000D9A376 /* Project object */;
+}
