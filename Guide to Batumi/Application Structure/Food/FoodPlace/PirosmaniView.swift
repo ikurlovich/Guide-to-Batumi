@@ -14,7 +14,7 @@ struct PirosmaniView: View {
                 GroupBox(label: Label("  Ресторан \"Pirosmani\"", image: "")){
                     FoodOneView()
                     HStack{
-                        Text("Подробнее")
+                        Text("More")
                             .foregroundColor(.accentColor)
                             .onTapGesture {
                                 withAnimation{

@@ -14,7 +14,7 @@ struct DonaView: View {
                 GroupBox(label: Label("  Кондитерская \"Dona\"", image: "")){
                     FoodThreeView()
                     HStack{
-                        Text("Подробнее")
+                        Text("More")
                             .foregroundColor(.accentColor)
                             .onTapGesture {
                                 withAnimation{

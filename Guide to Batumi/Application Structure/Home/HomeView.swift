@@ -29,10 +29,6 @@ struct HomeView: View {
                 Text("**Краткие характеристики:**\nНаселение - 175 100 человек\nОфициальная валюта - Лари\nЦентральная улица - Чавчавадзе\nЧасовой пояс - UTC +4 (GMT +4)")
                     .multilineTextAlignment(.center)
             }
-            
-            Link("Статья на Википедии",
-                  destination: URL(string: "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%82%D1%83%D0%BC%D0%B8")!)
-            .padding()
         }
     }
 }

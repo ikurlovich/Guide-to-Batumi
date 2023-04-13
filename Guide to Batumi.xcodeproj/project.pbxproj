@@ -35,6 +35,7 @@
 		5982FC632992FA4200D9A376 /* Guide_to_BatumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC622992FA4200D9A376 /* Guide_to_BatumiTests.swift */; };
 		5982FC6D2992FA4200D9A376 /* Guide_to_BatumiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */; };
 		5982FC6F2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */; };
+		59FFEC0829E8A1ED00F54AD1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = 59FFEC0729E8A1ED00F54AD1 /* SafariCover */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FFEC0829E8A1ED00F54AD1 /* SafariCover in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +288,9 @@
 			dependencies = (
 			);
 			name = "Guide to Batumi";
+			packageProductDependencies = (
+				59FFEC0729E8A1ED00F54AD1 /* SafariCover */,
+			);
 			productName = "Guide to Batumi";
 			productReference = 5982FC4E2992FA4000D9A376 /* Guide to Batumi.app */;
 			productType = "com.apple.product-type.application";
@@ -334,7 +339,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					5982FC4D2992FA4000D9A376 = {
 						CreatedOnToolsVersion = 14.2;
@@ -359,6 +364,9 @@
 				ru,
 			);
 			mainGroup = 5982FC452992FA4000D9A376;
+			packageReferences = (
+				59FFEC0629E8A1ED00F54AD1 /* XCRemoteSwiftPackageReference "SafariCover" */,
+			);
 			productRefGroup = 5982FC4F2992FA4000D9A376 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -464,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -524,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -585,14 +595,14 @@
 				DEVELOPMENT_TEAM = 8Q8855SSVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Guide to Batumi";
+				INFOPLIST_KEY_CFBundleDisplayName = "Batumi Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -601,9 +611,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-Batumi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -618,14 +631,14 @@
 				DEVELOPMENT_TEAM = 8Q8855SSVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Guide to Batumi";
+				INFOPLIST_KEY_CFBundleDisplayName = "Batumi Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,9 +647,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ikurlovich.Guide-to-Batumi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -758,6 +774,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59FFEC0629E8A1ED00F54AD1 /* XCRemoteSwiftPackageReference "SafariCover" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/SafariCover";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59FFEC0729E8A1ED00F54AD1 /* SafariCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59FFEC0629E8A1ED00F54AD1 /* XCRemoteSwiftPackageReference "SafariCover" */;
+			productName = SafariCover;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5982FC462992FA4000D9A376 /* Project object */;
 }

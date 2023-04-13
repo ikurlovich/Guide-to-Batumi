@@ -14,13 +14,8 @@ struct WokView: View {
                 GroupBox(label: Label("  Мини ресторан \"Вок Венга\"", image: "")){
                     FoodFourView()
                     HStack{
-                        Text("Подробнее")
+                        Text("More")
                             .foregroundColor(.accentColor)
-                            .onTapGesture {
-                                withAnimation{
-                                    detal1.toggle()
-                                }
-                            }
                         Spacer()
                         Text("Рейтинг 4.1")
                         Spacer()
@@ -32,7 +27,6 @@ struct WokView: View {
                             .foregroundColor(Color(red: 1.0, green: 0.7, blue: 0.1))
                     }
                     .padding(.horizontal)
-                    if detal1{
                         Text("\nМини ресторан \"Вок Венга\" в Батуми - это скромное но очень уютное заведение азиатской кухни, расположенное в центре города.\n\nЛапшичная предлагает скромны выбор комбинаций: риса, лапши, мяса и заправки, однако каждое из них приготовленно с большим профессионализмом и частичкой души.\n\nС улицы заведение очень неприметное, но каждый кто знает толк в азиатской уличной кухне, оценит качество блюд и колорит этого скромного местечка. ")
                             .padding(.horizontal)
                             .onTapGesture {
@@ -43,7 +37,6 @@ struct WokView: View {
                         Link("Ссылка на Google Maps",
                              destination: URL(string: "https://goo.gl/maps/mbvjKxk62A6j1Fqb8")!)
                         .padding(.vertical)
-                    }
                 }
             }
         }

@@ -14,7 +14,7 @@ struct KarabakView: View {
                 GroupBox(label: Label("  Ресторан \"Karabak\"", image: "")){
                     FoodTwoView()
                     HStack{
-                        Text("Подробнее")
+                        Text("More")
                             .foregroundColor(.accentColor)
                             .onTapGesture {
                                 withAnimation{

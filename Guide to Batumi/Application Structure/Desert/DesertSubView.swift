@@ -56,7 +56,7 @@ struct DesertSubView: View {
                          funFact = nextFunFact
                          remainingFunFacts.removeAll(where: { $0 == nextFunFact })
                      } else {
-                         funFact = "Вы признаны целеориентированным человеком, который докопается до истины! Вам удалось выбрать все факты."
+                         funFact = "Вы признаны целеориентированным человеком, который докопается до истины! Вам удалось открыть все факты."
                          isSpinning = true
                      }
                  }
