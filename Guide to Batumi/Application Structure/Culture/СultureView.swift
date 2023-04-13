@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SafariCover
 struct CultureView: View {
     @State private var currentIndex = 0
     @State private var secretOn = false
+    @State private var isPresented = false
     var body: some View {
         ScrollView {
             VStack{
@@ -30,8 +32,10 @@ struct CultureView: View {
                             DisclosureGroup("Сад на карте") {
                                 MapGardenView()
                                     .scaledToFit()
-                                Link("Ссылка на Google Maps",
-                                     destination: URL(string: "https://goo.gl/maps/k2NCwajedz1JTmJB9")!)
+                                //Link("Ссылка на Google Maps",
+                                     //destination: URL(string: //"https://goo.gl/maps/k2NCwajedz1JTmJB9")!)
+                                Text("22")
+                                    .safariCover($isPresented, url: "https://github.com/TopScrech")
                             }
                         }
                         .padding(.horizontal)

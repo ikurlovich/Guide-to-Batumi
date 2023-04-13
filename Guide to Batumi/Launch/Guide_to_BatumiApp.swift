@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SafariCover
 
 @main
 struct Guide_to_BatumiApp: App {
