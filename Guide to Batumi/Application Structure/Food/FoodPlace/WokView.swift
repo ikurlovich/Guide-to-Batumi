@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WokView: View {
     @State private var detal1 = false
+    @State private var isPresented = false
     var body: some View {
             VStack{
                 GroupBox(label: Label("  Мини ресторан \"Вок Венга\"", image: "")){
@@ -34,9 +35,13 @@ struct WokView: View {
                                     detal1.toggle()
                                 }
                             }
-                        Link("Ссылка на Google Maps",
-                             destination: URL(string: "https://goo.gl/maps/mbvjKxk62A6j1Fqb8")!)
+                    Text("Ссылка на Google Maps")
                         .padding(.vertical)
+                        .foregroundColor(.accentColor)
+                        .onTapGesture {
+                            isPresented.toggle()
+                        }
+                        .safariCover($isPresented, url: "https://goo.gl/maps/mbvjKxk62A6j1Fqb8")
                 }
             }
         }

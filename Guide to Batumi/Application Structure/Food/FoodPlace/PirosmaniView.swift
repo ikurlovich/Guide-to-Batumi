@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PirosmaniView: View {
     @State private var detal1 = false
+    @State private var isPresented = false
     var body: some View {
             VStack{
                 GroupBox(label: Label("  Ресторан \"Pirosmani\"", image: "")){
@@ -40,9 +41,14 @@ struct PirosmaniView: View {
                                     detal1.toggle()
                                 }
                             }
-                        Link("Ссылка на Google Maps",
-                             destination: URL(string: "https://goo.gl/maps/iM5fjPNuexQTX5ve6")!)
-                        .padding(.vertical)
+
+                        Text("Ссылка на Google Maps")
+                            .padding(.vertical)
+                            .foregroundColor(.accentColor)
+                            .onTapGesture {
+                                isPresented.toggle()
+                            }
+                            .safariCover($isPresented, url: "https://goo.gl/maps/iM5fjPNuexQTX5ve6")
                     }
                 }
             }

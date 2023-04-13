@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FoodThreeView: View {
-    private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
     @State private var currentIndex = 0
     var body: some View {
         TabView(selection: $currentIndex){

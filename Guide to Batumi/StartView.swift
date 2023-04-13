@@ -22,6 +22,7 @@ struct StartView: View {
                         .overlay(RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.blue, lineWidth: 2))
                         .shadow(color: .blue, radius: 5, x: 0, y: 2)
+                        .padding()
                         .onTapGesture {
                             withAnimation {
                                 isShowingDetails.toggle()

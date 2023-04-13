@@ -1,16 +1,9 @@
-//
-//  СultureView.swift
-//  Guide to Batumi
-//
-//  Created by Илья Курлович on 08.02.2023.
-//
-
 import SwiftUI
-import SafariCover
 struct CultureView: View {
     @State private var currentIndex = 0
     @State private var secretOn = false
     @State private var isPresented = false
+    @State private var url: String = ""
     var body: some View {
         ScrollView {
             VStack{
@@ -32,10 +25,12 @@ struct CultureView: View {
                             DisclosureGroup("Сад на карте") {
                                 MapGardenView()
                                     .scaledToFit()
-                                //Link("Ссылка на Google Maps",
-                                     //destination: URL(string: //"https://goo.gl/maps/k2NCwajedz1JTmJB9")!)
-                                Text("22")
-                                    .safariCover($isPresented, url: "https://github.com/TopScrech")
+                                Text("Ссылка на Google Maps")
+                                    .foregroundColor(.accentColor)
+                                    .onTapGesture {
+                                        url = "https://goo.gl/maps/k2NCwajedz1JTmJB9"
+                                        isPresented.toggle()
+                                    }
                             }
                         }
                         .padding(.horizontal)
@@ -59,8 +54,12 @@ struct CultureView: View {
                             DisclosureGroup("Сад на карте") {
                                     MapGonioView()
                                     .scaledToFit()
-                                Link("Ссылка на Google Maps",
-                                     destination: URL(string: "https://goo.gl/maps/V267Pkam43BimZzA7")!)
+                                Text("Ссылка на Google Maps")
+                                    .foregroundColor(.accentColor)
+                                    .onTapGesture {
+                                        url = "https://goo.gl/maps/V267Pkam43BimZzA7"
+                                        isPresented.toggle()
+                                    }
                             }
                         }
                         .padding(.horizontal)
@@ -84,8 +83,12 @@ struct CultureView: View {
                             DisclosureGroup("Музей на карте") {
                                     MapMuseumView()
                                     .scaledToFit()
-                                Link("Ссылка на Google Maps",
-                                     destination: URL(string: "https://goo.gl/maps/B5jSNainSH8TPfEr6")!)
+                                Text("Ссылка на Google Maps")
+                                    .foregroundColor(.accentColor)
+                                    .onTapGesture {
+                                        url = "https://goo.gl/maps/B5jSNainSH8TPfEr6"
+                                        isPresented.toggle()
+                                    }
                             }
                         }
                         .padding(.horizontal)
@@ -108,8 +111,12 @@ struct CultureView: View {
                             DisclosureGroup("Пляж на карте") {
                                     MapBeachView()
                                     .scaledToFit()
-                                Link("Ссылка на Google Maps",
-                                     destination: URL(string: "https://goo.gl/maps/baFxzGWaVvdNLijd7")!)
+                                Text("Ссылка на Google Maps")
+                                    .foregroundColor(.accentColor)
+                                    .onTapGesture {
+                                        url = "https://goo.gl/maps/baFxzGWaVvdNLijd7"
+                                        isPresented.toggle()
+                                    }
                             }
                         }
                         .padding(.horizontal)
@@ -144,14 +151,19 @@ struct CultureView: View {
                                     .resizable()
                                     .scaledToFit()
                                 Text("Знакомьтесь! Пёс - Батон\nдружелюбный собакен проживающий по адресу 1 Pirosmani St, Batumi.Батон настолько дружелюбный и милый, что был удостоен стать достопримечательностью города и был добавлен на Google Maps!\n")
-                                Link("Батон на Google Maps",
-                                     destination: URL(string: "https://goo.gl/maps/AATvx12HBkFRRRQy8")!)
+                                Text("Батон на Google Maps")
+                                    .foregroundColor(.accentColor)
+                                    .onTapGesture {
+                                        url = "https://goo.gl/maps/AATvx12HBkFRRRQy8"
+                                        isPresented.toggle()
+                                    }
                             }
                         }
                         .padding(.horizontal)
                     }
                 }
             }
+            .safariCover($isPresented, url: url)
         }
     }
 }
