@@ -4,25 +4,43 @@ import ScrechKit
 struct StartView: View {
     @State private var showImages: Bool = false
     @State private var isShowingDetails = false
+    @State private var dictionaryOn = false
     
     var body: some View {
         ZStack {
             VStack {
-                Text(isShowingDetails ? "Guide to Batumi 🇬🇪" : "Начнём путешествие по городу?\n🛫🇬🇪🏖️")
-                    .padding()
-                    .multilineTextAlignment(.center)
-                    .onTapGesture {
-                        withAnimation {
-                            isShowingDetails.toggle()
+                ZStack{
+                    Text(isShowingDetails ? "Guide to Batumi 🇬🇪" : "Начнём путешествие по городу?\n🛫🇬🇪🏖️")
+                        .multilineTextAlignment(.center)
+                        .onTapGesture {
+                            withAnimation {
+                                isShowingDetails.toggle()
+                            }
+                        }
+                    HStack{
+                        Spacer()
+                        if isShowingDetails{
+                            Image(systemName: "text.viewfinder")
+                                .foregroundColor(.accentColor)
+                                .padding(.horizontal)
+                                .onTapGesture {
+                                    withAnimation{
+                                        dictionaryOn.toggle()
+                                    }
+                                }
+                                .sheet(isPresented: $dictionaryOn){
+                                    DictionaryView()
+                                }
                         }
                     }
+                }
                 if isShowingDetails {
                     ContentView()
                         .transition(.move(edge: .bottom))
                 }
                 
                 if isShowingDetails == false {
-                    Text(showImages ? "Готовы?" : "Поехали!")
+                    Text(showImages ? "Полетели!" : "Жмай сюдой!")
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .padding()
@@ -36,7 +54,7 @@ struct StartView: View {
                             showImages = true
                             delay(2.5) {
                                 withAnimation {
-                                    isShowingDetails.toggle()
+                                    isShowingDetails = true
                                 }
                             }
                         }

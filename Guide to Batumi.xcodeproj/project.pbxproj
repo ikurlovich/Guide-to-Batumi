@@ -35,6 +35,7 @@
 		5982FC632992FA4200D9A376 /* Guide_to_BatumiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC622992FA4200D9A376 /* Guide_to_BatumiTests.swift */; };
 		5982FC6D2992FA4200D9A376 /* Guide_to_BatumiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */; };
 		5982FC6F2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */; };
+		59904BC929E979A50047EE07 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59904BC829E979A50047EE07 /* DictionaryView.swift */; };
 		59FFEC0829E8A1ED00F54AD1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = 59FFEC0729E8A1ED00F54AD1 /* SafariCover */; };
 		59FFEC0A29E94F0F00F54AD1 /* StartSubIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFEC0929E94F0F00F54AD1 /* StartSubIView.swift */; };
 		F304498529E969AD006DC0C7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F304498429E969AD006DC0C7 /* ScrechKit */; };
@@ -89,6 +90,7 @@
 		5982FC682992FA4200D9A376 /* Guide to BatumiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guide to BatumiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiUITests.swift; sourceTree = "<group>"; };
 		5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59904BC829E979A50047EE07 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		59FFEC0929E94F0F00F54AD1 /* StartSubIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSubIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +246,7 @@
 				5924DA1229AA6BBB00748807 /* Launch */,
 				5924DA1729AA79C800748807 /* StartView.swift */,
 				59FFEC0929E94F0F00F54AD1 /* StartSubIView.swift */,
+				59904BC829E979A50047EE07 /* DictionaryView.swift */,
 				5982FC532992FA4000D9A376 /* ContentView.swift */,
 				597F4742299301EF00B0FAD4 /* Application Structure */,
 				5924DA1529AA762100748807 /* Assets.xcassets */,
@@ -433,6 +436,7 @@
 				597F4744299302EF00B0FAD4 /* СultureView.swift in Sources */,
 				5924DA4B29AEB1D200748807 /* DonaView.swift in Sources */,
 				597F47482993109E00B0FAD4 /* DesertView.swift in Sources */,
+				59904BC929E979A50047EE07 /* DictionaryView.swift in Sources */,
 				5924DA3B29AE996700748807 /* DesertSubView.swift in Sources */,
 				5982FC542992FA4000D9A376 /* ContentView.swift in Sources */,
 				5924DA0B29A94BE000748807 /* MapMuseumView.swift in Sources */,
