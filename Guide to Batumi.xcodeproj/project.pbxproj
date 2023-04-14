@@ -36,6 +36,7 @@
 		5982FC6D2992FA4200D9A376 /* Guide_to_BatumiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */; };
 		5982FC6F2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */; };
 		59FFEC0829E8A1ED00F54AD1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = 59FFEC0729E8A1ED00F54AD1 /* SafariCover */; };
+		59FFEC0A29E94F0F00F54AD1 /* StartSubIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFEC0929E94F0F00F54AD1 /* StartSubIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		5982FC682992FA4200D9A376 /* Guide to BatumiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guide to BatumiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5982FC6C2992FA4200D9A376 /* Guide_to_BatumiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiUITests.swift; sourceTree = "<group>"; };
 		5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide_to_BatumiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59FFEC0929E94F0F00F54AD1 /* StartSubIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSubIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 			children = (
 				5924DA1229AA6BBB00748807 /* Launch */,
 				5924DA1729AA79C800748807 /* StartView.swift */,
+				59FFEC0929E94F0F00F54AD1 /* StartSubIView.swift */,
 				5982FC532992FA4000D9A376 /* ContentView.swift */,
 				597F4742299301EF00B0FAD4 /* Application Structure */,
 				5924DA1529AA762100748807 /* Assets.xcassets */,
@@ -410,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FFEC0A29E94F0F00F54AD1 /* StartSubIView.swift in Sources */,
 				5924DA0729A7D13E00748807 /* MapGardenView.swift in Sources */,
 				5924DA4D29AEB20800748807 /* FoodThreeView.swift in Sources */,
 				5924DA1829AA79C800748807 /* StartView.swift in Sources */,
