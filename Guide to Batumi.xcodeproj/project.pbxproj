@@ -37,6 +37,7 @@
 		5982FC6F2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982FC6E2992FA4200D9A376 /* Guide_to_BatumiUITestsLaunchTests.swift */; };
 		59FFEC0829E8A1ED00F54AD1 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = 59FFEC0729E8A1ED00F54AD1 /* SafariCover */; };
 		59FFEC0A29E94F0F00F54AD1 /* StartSubIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFEC0929E94F0F00F54AD1 /* StartSubIView.swift */; };
+		F304498529E969AD006DC0C7 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F304498429E969AD006DC0C7 /* ScrechKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59FFEC0829E8A1ED00F54AD1 /* SafariCover in Frameworks */,
+				F304498529E969AD006DC0C7 /* ScrechKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +295,7 @@
 			name = "Guide to Batumi";
 			packageProductDependencies = (
 				59FFEC0729E8A1ED00F54AD1 /* SafariCover */,
+				F304498429E969AD006DC0C7 /* ScrechKit */,
 			);
 			productName = "Guide to Batumi";
 			productReference = 5982FC4E2992FA4000D9A376 /* Guide to Batumi.app */;
@@ -369,6 +372,7 @@
 			mainGroup = 5982FC452992FA4000D9A376;
 			packageReferences = (
 				59FFEC0629E8A1ED00F54AD1 /* XCRemoteSwiftPackageReference "SafariCover" */,
+				F304498329E969AD006DC0C7 /* XCRemoteSwiftPackageReference "ScrechKit" */,
 			);
 			productRefGroup = 5982FC4F2992FA4000D9A376 /* Products */;
 			projectDirPath = "";
@@ -788,6 +792,14 @@
 				kind = branch;
 			};
 		};
+		F304498329E969AD006DC0C7 /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -795,6 +807,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 59FFEC0629E8A1ED00F54AD1 /* XCRemoteSwiftPackageReference "SafariCover" */;
 			productName = SafariCover;
+		};
+		F304498429E969AD006DC0C7 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F304498329E969AD006DC0C7 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,14 +1,6 @@
-//
-//  StartSubIView.swift
-//  Guide to Batumi
-//
-//  Created by Илья Курлович on 14.04.2023.
-//
-
 import SwiftUI
 
 struct StartSubIView2: View {
-    
     @State private var isAnimating = false
     @State private var animationCompleted = false
     
@@ -36,30 +28,14 @@ struct StartSubIView2: View {
 }
 
 struct StartSubIView: View {
-    @State private var showImages = false
+    @Binding private var showImages: Bool
+    
+    init(_ showImages: Binding<Bool>) {
+        self._showImages = showImages
+    }
     
     var body: some View {
-        VStack {
-            EmptyView()
-                .padding()
-            if showImages == false {
-                Text(" Готовы? ")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.orange))
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.orange, lineWidth: 2))
-                    .shadow(color: .orange, radius: 5, x: 0, y: 2)
-                    .padding()
-                    .onTapGesture {
-                        withAnimation {
-                            showImages.toggle()
-                        }
-                    }
-            }
-            
+        Group {
             if showImages {
                 StartSubIView2(imageName: "image1", animationDuration: 4.6, rotationSpeed: 0.5, offsetY: 100)
                 StartSubIView2(imageName: "image2", animationDuration: 3.0, rotationSpeed: 1.0, offsetY: 100)
@@ -71,8 +47,8 @@ struct StartSubIView: View {
     }
 }
 
-struct StartSubIView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartSubIView()
-    }
-}
+//struct StartSubIView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StartSubIView()
+//    }
+//}

@@ -1,10 +1,3 @@
-//
-//  DesertSubView.swift
-//  Guide to Batumi
-//
-//  Created by Илья Курлович on 01.03.2023.
-//
-
 import SwiftUI
 struct DesertSubView: View {
     var allFunFacts =
@@ -41,11 +34,11 @@ struct DesertSubView: View {
 
      var body: some View {
          VStack {
-             
              Text(funFact)
+                 .title2()
                  .multilineTextAlignment(.center)
-                 .font(.title2)
                  .frame(maxWidth: 400, minHeight: 10)
+             
              Image("khinkali")
                  .resizable()
                  .frame(width: 120, height: 120, alignment: .center)
@@ -61,7 +54,7 @@ struct DesertSubView: View {
                      }
                  }
              Text("Жмай!")
-                 .font(.title2)
+                 .title2()
          }
          .padding()
      }

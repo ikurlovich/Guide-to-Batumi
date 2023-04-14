@@ -1,5 +1,6 @@
 import SwiftUI
 import SafariCover
+import ScrechKit
 
 @main
 struct Guide_to_BatumiApp: App {
