@@ -30,7 +30,11 @@ struct StartView: View {
                                 }
                                 .sheet(isPresented: $dictionaryOn){
                                     DictionaryView()
+                                        .presentationDetents([.height(200), .medium, .large])
+                                        .presentationBackground(.purple)
+                                        .presentationCornerRadius(32)
                                 }
+                                
                         }
                     }
                 }

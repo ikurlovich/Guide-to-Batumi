@@ -42,6 +42,7 @@ struct DesertSubView: View {
              Image("khinkali")
                  .resizable()
                  .frame(width: 120, height: 120, alignment: .center)
+                 .shadow(color: .accentColor, radius: 10, x: 0, y: 3)
                  .rotationEffect(isSpinning ? .degrees(360) : .degrees(0))
                  .animation(Animation.linear(duration: 20).repeatForever(autoreverses: false), value: isSpinning)
                  .onTapGesture {
