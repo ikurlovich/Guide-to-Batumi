@@ -34,14 +34,15 @@ struct DesertSubView: View {
 
      var body: some View {
          VStack {
+             Spacer()
              Text(funFact)
                  .title2()
                  .multilineTextAlignment(.center)
                  .frame(maxWidth: 400, minHeight: 10)
-             
-             Image("khinkali")
+             Spacer().frame(height: 50)
+             Image("khinkali22")
                  .resizable()
-                 .frame(width: 120, height: 120, alignment: .center)
+                 .frame(width: 150, height: 150, alignment: .center)
                  .shadow(color: .accentColor, radius: 10, x: 0, y: 3)
                  .rotationEffect(isSpinning ? .degrees(360) : .degrees(0))
                  .animation(Animation.linear(duration: 20).repeatForever(autoreverses: false), value: isSpinning)
@@ -54,9 +55,11 @@ struct DesertSubView: View {
                          isSpinning = true
                      }
                  }
+             Spacer().frame(height: 50)
              Text("Жмай на Хинкальку!")
                  .title2()
                  .foregroundColor(.accentColor)
+             Spacer()
          }
          .padding()
      }
