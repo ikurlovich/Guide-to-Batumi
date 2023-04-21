@@ -34,16 +34,16 @@ struct DesertSubView: View {
 
      var body: some View {
          VStack {
-             Spacer()
              Text(funFact)
                  .title2()
                  .multilineTextAlignment(.center)
                  .frame(maxWidth: 400, minHeight: 10)
-             Spacer().frame(height: 50)
+             Spacer().frame(height: 10, alignment: .center)
              Image("khinkali22")
                  .resizable()
-                 .frame(width: 150, height: 150, alignment: .center)
-                 .shadow(color: .accentColor, radius: 10, x: 0, y: 3)
+                 .scaledToFit()
+                 .frame(width: 180, height: 180, alignment: .center)
+                 .shadow(color: .accentColor, radius: 10, x: 0, y: 0)
                  .rotationEffect(isSpinning ? .degrees(360) : .degrees(0))
                  .animation(Animation.linear(duration: 20).repeatForever(autoreverses: false), value: isSpinning)
                  .onTapGesture {
@@ -55,11 +55,9 @@ struct DesertSubView: View {
                          isSpinning = true
                      }
                  }
-             Spacer().frame(height: 50)
              Text("Жмай на Хинкальку!")
                  .title2()
                  .foregroundColor(.accentColor)
-             Spacer()
          }
          .padding()
      }

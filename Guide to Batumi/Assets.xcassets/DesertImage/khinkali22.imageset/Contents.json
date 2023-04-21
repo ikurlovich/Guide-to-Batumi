@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "khinkali22.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "khinkali.heic",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -43,16 +43,16 @@ struct StartView: View {
                         .transition(.move(edge: .bottom))
                 }
                 
-                if isShowingDetails == false {
-                    Text(showImages ? "Полетели!" : "Жмай сюдой!")
+                if showImages == false {
+                    Text("Жмай сюдой!")
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .padding()
                         .background(RoundedRectangle(cornerRadius: 10)
-                            .fill(showImages ? .orange : Color.accentColor))
+                            .fill(Color.accentColor))
                         .overlay(RoundedRectangle(cornerRadius: 10)
-                            .stroke(showImages ? .orange : Color.accentColor, lineWidth: 2))
-                        .shadow(color: showImages ? .orange : .accentColor, radius: 5, x: 0, y: 2)
+                            .stroke(Color.accentColor, lineWidth: 2))
+                        .shadow(color: .accentColor, radius: 5, x: 0, y: 2)
                         .padding()
                         .onTapGesture {
                             showImages = true
