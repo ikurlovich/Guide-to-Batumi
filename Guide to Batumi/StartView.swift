@@ -9,7 +9,7 @@ struct StartView: View {
     var body: some View {
         ZStack {
             VStack {
-                ZStack{
+                ZStack {
                     Text(isShowingDetails ? "Guide to Batumi 🇬🇪" : "Начнём путешествие по городу?\n🛫🇬🇪🏖️")
                         .multilineTextAlignment(.center)
                         .onTapGesture {
@@ -17,7 +17,7 @@ struct StartView: View {
                                 isShowingDetails.toggle()
                             }
                         }
-                    HStack{
+                    HStack {
                         Spacer()
                         if isShowingDetails{
                             Image(systemName: "text.viewfinder")
@@ -34,7 +34,7 @@ struct StartView: View {
                                         .presentationBackground(.purple)
                                         .presentationCornerRadius(32)
                                 }
-                                
+                            
                         }
                     }
                 }
@@ -45,13 +45,17 @@ struct StartView: View {
                 
                 if showImages == false {
                     Text("Жмай сюдой!")
-                        .fontWeight(.semibold)
+                        .semibold()
                         .foregroundColor(.white)
                         .padding()
-                        .background(RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.accentColor))
-                        .overlay(RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.accentColor, lineWidth: 2))
+                        .background {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.accentColor)
+                        }
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.accentColor, lineWidth: 2)
+                        }
                         .shadow(color: .accentColor, radius: 5, x: 0, y: 2)
                         .padding()
                         .onTapGesture {

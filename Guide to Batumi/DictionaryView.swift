@@ -1,20 +1,14 @@
-//
-//  DictionaryView.swift
-//  Guide to Batumi
-//
-//  Created by Илья Курлович on 14.04.2023.
-//
-
 import SwiftUI
 
 struct DictionaryView: View {
     @State private var isPresented = false
+    
     var body: some View {
-        ScrollView{
+        ScrollView(showsIndicators: false) {
             Text("**Русско-грузинский разговорник**")
-                .padding()
+                .sheetTitle()
+            
             Text("""
-
 **Общие фразы:**
 
 Да - Хо
@@ -64,8 +58,9 @@ struct DictionaryView: View {
 
 """)
             .multilineTextAlignment(.center)
+            
             Text("**Ссылка на полный разговорник**")
-                .fontWeight(.semibold)
+                .semibold()
                 .foregroundColor(.white)
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 10)
@@ -86,5 +81,6 @@ struct DictionaryView: View {
 struct DictionaryView_Previews: PreviewProvider {
     static var previews: some View {
         DictionaryView()
+            .sheet(isPresented: .constant(true)) { DictionaryView() }
     }
 }

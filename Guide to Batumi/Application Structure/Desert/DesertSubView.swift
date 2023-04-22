@@ -1,7 +1,7 @@
 import SwiftUI
+
 struct DesertSubView: View {
-    var allFunFacts =
-       [
+    private let allFunFacts = [
         "В Батуми бывают потопы из-за осадков.\n⛈️",
         "В Батуми хинкали можно заказать практически в любом заведении.\n🥟",
         "В Батуми множество обоятельных улиц.\n😊",
@@ -24,44 +24,47 @@ struct DesertSubView: View {
         "В Батуми платные лифты, спуск или подъём стоит несколько тетри.\n💸",
         "В Батуми при оплате картой нужно называть имя банка, например TBC или BOG.\n☝️",
         "В Батуми в низкая скорость проводного интернета около 20 м/б, но мобильный интернет отличный стабильные 80 м/б.\n📶"
-       ]
+    ]
+    
     @State private var remainingFunFacts: [String]
     @State private var funFact = "Интересные факты о Батуми"
     @State private var isSpinning = false
-     init() {
-         remainingFunFacts = allFunFacts
-     }
-
-     var body: some View {
-         VStack {
-             Text(funFact)
-                 .title2()
-                 .multilineTextAlignment(.center)
-                 .frame(maxWidth: 400, minHeight: 10)
-             Spacer().frame(height: 10, alignment: .center)
-             Image("khinkali22")
-                 .resizable()
-                 .scaledToFit()
-                 .frame(width: 180, height: 180, alignment: .center)
-                 .shadow(color: .accentColor, radius: 10, x: 0, y: 0)
-                 .rotationEffect(isSpinning ? .degrees(360) : .degrees(0))
-                 .animation(Animation.linear(duration: 20).repeatForever(autoreverses: false), value: isSpinning)
-                 .onTapGesture {
-                     if let nextFunFact = remainingFunFacts.randomElement() {
-                         funFact = nextFunFact
-                         remainingFunFacts.removeAll(where: { $0 == nextFunFact })
-                     } else {
-                         funFact = "Вы признаны целеориентированным человеком, который докопается до истины! Вам удалось открыть все факты."
-                         isSpinning = true
-                     }
-                 }
-             Text("Жмай на Хинкальку!")
-                 .title2()
-                 .foregroundColor(.accentColor)
-         }
-         .padding()
-     }
- }
+    
+    init() {
+        remainingFunFacts = allFunFacts
+    }
+    
+    var body: some View {
+        VStack {
+            Image("khinkali22")
+                .resizable()
+                .frame(width: 180, height: 180)
+                .shadow(color: .accentColor, radius: 10, x: 0, y: 0)
+                .rotationEffect(isSpinning ? .degrees(360) : .degrees(0))
+                .animation(.linear(duration: 20).repeatForever(autoreverses: false), value: isSpinning)
+                .onTapGesture {
+                    if let nextFunFact = remainingFunFacts.randomElement() {
+                        funFact = nextFunFact
+                        remainingFunFacts.removeAll(where: { $0 == nextFunFact })
+                    } else {
+                        funFact = "Вы признаны целеориентированным человеком, который докопается до истины! Вам удалось открыть все факты."
+                        isSpinning = true
+                    }
+                }
+            
+            Text("Жмай на Хинкальку!")
+                .title2()
+                .foregroundColor(.accentColor)
+        }
+        .overlay {
+            Text(funFact)
+                .title2()
+                .multilineTextAlignment(.center)
+                .frame(minWidth: 400)
+                .offset(y: -180)
+        }
+    }
+}
 
 struct DesertSubView_Previews: PreviewProvider {
     static var previews: some View {

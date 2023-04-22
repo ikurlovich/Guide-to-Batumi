@@ -1,15 +1,9 @@
-//
-//  FoodThreeView.swift
-//  Guide to Batumi
-//
-//  Created by Илья Курлович on 01.03.2023.
-//
-
 import SwiftUI
 
 struct FoodThreeView: View {
     private let timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
     @State private var currentIndex = 0
+    
     var body: some View {
         TabView(selection: $currentIndex){
             ForEach(1..<4, id: \.self){ num in

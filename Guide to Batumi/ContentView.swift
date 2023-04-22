@@ -3,21 +3,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            TabView{
+            TabView {
                 HomeView()
-                    .tabItem{
+                    .tabItem {
                         Label("Home", image: "Home-ImageBar")
                     }
                 CultureView()
-                    .tabItem{
+                    .tabItem {
                         Label("Culture", image: "Culture-ImageBar")
                     }
                 FoodView()
-                    .tabItem{
+                    .tabItem {
                         Label("Food", image: "Food-ImageBar")
                     }
                 DesertView()
-                    .tabItem{
+                    .tabItem {
                         Label("Fun", image: "Desert-ImageBar")
                     }
             }
